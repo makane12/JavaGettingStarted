@@ -24,7 +24,7 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     public void numberOfWholeSlicesFromOnePizzaAndEightPeople() {
         int numberOfPeople = 4;
         int numberOfEightSlicePizzas = 2;
@@ -35,7 +35,7 @@ public class WeekOneExercisesPartOne {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     // TODO RESPONSE: What operator is used to determine remainders?
     public void leftoversWithFivePeopleAndTwoPizzas() {
         int numberOfPeople = 5;
@@ -47,17 +47,21 @@ public class WeekOneExercisesPartOne {
     }
 
     private int divideUpEightSlicePizzasEvenly(int numberOfPizzas, int numberOfPeople) {
-        return 0;
+        return numberOfPizzas * 8/ numberOfPeople;
     }
 
     private int determineLeftoverSlicesOfPizza(int numberOfPizzas, int numberOfPeople) {
-        return 0;
+        return numberOfPeople % numberOfPizzas;
+        // remainder of 5 % 2 leaves a remainder of 1, which matches expected result on line 46
     }
 
     @Test
-    @Disabled
+    //@Disabled
     // TODO RESPONSE: In the variable declarations below, why is it necessary to place
     //  an 'f' after 4.3 but not after 1500 or 4?
+
+    //answer to question - have to put an f after 4.3 because it is a decimal value and floating points handle decimals
+
     public void simpleInterestReturnsCorrectAmount() {
         float principalAmount = 1500;
         float interestRateAsAPercent = 4.3f;
@@ -79,6 +83,7 @@ public class WeekOneExercisesPartOne {
      * @return
      */
     private float calcSimpleInterest(float principal, float percentInterestRate, float numberOfYears) {
-        return 0;
+        //return (float) (1500 * (1 + (.043 * 4)));
+        return principal * (1 + (percentInterestRate / 100) * numberOfYears);
     }
 }
