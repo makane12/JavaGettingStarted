@@ -5,15 +5,23 @@ public class BowlingGame {
 
     public void roll(int pins) {
         // TODO: Replace this with description of why this postfix operator works here
+        //This will increment the # rolls each time the loop is run
         rolls[index++] = pins;
     }
 
-    public int score() {
-        int score = 0;
         // TODO CODE: Change this to use a loop prior to implementing spare and strike calculation and then commit to git
         //            This change should not break the existing tests that pass. This is called refactoring.
 
         // TODO RESPONSE: Why does the subscript need to start with zero?
+
+    public int score() {
+        int score = 0;
+        int factorial = 1;
+        while(score > 1) {
+            factorial += score;
+            score--;
+        }
+
         score += rolls[0] + rolls[1];
         score += rolls[2] + rolls[3];
         score += rolls[4] + rolls[5];
@@ -26,5 +34,4 @@ public class BowlingGame {
         score += rolls[18] + rolls[19];
         return score;
     }
-
 }
