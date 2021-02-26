@@ -34,6 +34,7 @@ public class WeekOneExercisesPartOne {
         assertEquals(4, actualSlicesPerPerson);
     }
 
+
     @Test
     //@Disabled
     // TODO RESPONSE: What operator is used to determine remainders?

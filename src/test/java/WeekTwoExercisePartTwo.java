@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  *        you did too much and should start over from the previous test.
 */
 
+
 public class WeekTwoExercisePartTwo {
     // TODO: remove @Disabled attribute, make the test run green, and then move on to the next test
     // TODO: remember to refactor after you have a green test (never refactor when you have a failing test)
@@ -19,7 +20,7 @@ public class WeekTwoExercisePartTwo {
     // TODO Response: Why would you never refactor if you had a failing test?
 
     @Test
-    @Disabled
+    //@Disabled
     public void sendingOneShouldReturnStringOne(){
         // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
         // TODO: Implement the code to make this test pass
@@ -33,7 +34,7 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     public void sendingTwoShouldReturnStringTwo(){
         // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
         // TODO: Implement the code to make this test pass
@@ -70,7 +71,7 @@ public class WeekTwoExercisePartTwo {
         // TODO: don't forget to commit after passing the test
 
         FizzBuzz fb = new FizzBuzz();
-        String expected = "Fizz";
+        String expected = "Fizzy";
 
         String actual = fb.execute(9);
 

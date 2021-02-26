@@ -26,6 +26,7 @@ public class WeekTwoExercisePartOne {
      * The game score is the sum of all frame scores.
      */
 
+
     BowlingGame bowlingGame = new BowlingGame();
 
     // TODO: remove @Disabled attribute, make the test run green, and then move on to the next test
@@ -61,7 +62,7 @@ public class WeekTwoExercisePartOne {
     public void whenRollingSpareFrameScoreIsTenPlusNextRoll() {
         bowlingGame.roll(3);
         bowlingGame.roll(7);
-        bowlingGame.roll(6);
+        bowlingGame.roll(3);
         rollMany(17, 0);
 
         int actual = bowlingGame.score();
