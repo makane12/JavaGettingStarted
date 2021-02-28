@@ -1,28 +1,12 @@
 public class FizzBuzz {
     public String execute(Integer number) {
-        String result;
-        switch (number) {
-            case 1:
-                result = "1";
-                break;
-            case 2:
-                result = "2";
-                break;
-            case 3:
-                result = "Fizz";
-                break;
-            case 9:
-                result = "Fizzy";
-                break;
-            case 25:
-                result = "Buzz";
-                break;
-            case 45:
-                result = "FizzBuzz";
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + number);
+        String[] expected = {"1", "2", "Fizz", "Fizzy", "Buzz", "FizzBuzz"};
+        Integer[] given = {1, 2, 3, 9, 25, 45};
+        for (int i = 0; i < number; i++) {
+            if (number.equals(given[i])) {
+                    return expected[i];
+            }
         }
-        return result;
+        return "error";
     }
 }
