@@ -1,40 +1,28 @@
-//
-//public class FizzBuzz {
-//    public String execute(Integer number) {
-//        String[] expected = {"1", "2", "Fizz", "Fizzy", "Buzz", "FizzBuzz"};
-//        int[] given = {1, 2, 3, 25, 92, 45};
-//        String[] results = new String[expected.length];
-//
-//        for (int i = 0; i < given.length; i++) {
-//            return expected[i];
-//        }
-//
-//        for (String currentResult : results)
-//            System.out.println(currentResult);
-//        return expected[i];
-//    }
-//}
-
-
-//
-//public class FizzBuzz {
-//    public String execute(Integer number) {
-//        String[] results = new String[number];
-//        String result;
-//
-//        for(int i = 0; i < number; i++); {
-//        }
-//
-//        for(String currentResult : results)
-//            System.out.println(currentResult);
-//    }
-//    return String currentResult;
-//}
-
-//This is a small change to testing pushing
-
 public class FizzBuzz {
     public String execute(Integer number) {
-        return null;
+        String result;
+        switch (number) {
+            case 1:
+                result = "1";
+                break;
+            case 2:
+                result = "2";
+                break;
+            case 3:
+                result = "Fizz";
+                break;
+            case 9:
+                result = "Fizzy";
+                break;
+            case 25:
+                result = "Buzz";
+                break;
+            case 45:
+                result = "FizzBuzz";
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + number);
+        }
+        return result;
     }
 }

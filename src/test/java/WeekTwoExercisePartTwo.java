@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Disabled;
+//import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -11,8 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * Hint:  If you complete implementing a test and the next test passes w/o any changes to FizzBuzz.java,
  *        you did too much and should start over from the previous test.
 */
-
-
 public class WeekTwoExercisePartTwo {
     // TODO: remove @Disabled attribute, make the test run green, and then move on to the next test
     // TODO: remember to refactor after you have a green test (never refactor when you have a failing test)
@@ -49,7 +47,7 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     public void sendingThreeShouldReturnStringFizz() {
         // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
         // TODO: Implement the code to make this test pass
@@ -64,7 +62,7 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     public void sendingAnyMultipleOfThreeShouldReturnStringFizz() {
         // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
         // TODO: Implement the code to make this test pass
@@ -79,7 +77,7 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     public void sendingAnyMultipleOfFiveOfThreeShouldReturnStringBuzz() {
         // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
         // TODO: Implement the code to make this test pass
@@ -94,7 +92,7 @@ public class WeekTwoExercisePartTwo {
     }
 
     @Test
-    @Disabled
+    //@Disabled
     public void sendingAnyMultipleOfThreeAndFiveOfThreeShouldReturnStringFizzBuzz() {
         // TODO Comment: replace this comment with a brief description of why you made the change you did in FizzBuzz.java
         // TODO: Implement the code to make this test pass
