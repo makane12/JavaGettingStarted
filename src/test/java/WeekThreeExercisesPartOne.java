@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class WeekThreeExercisesPartOne {
    // class visibility
    // static variables vs. instance variables
@@ -22,5 +24,13 @@ public class WeekThreeExercisesPartOne {
     // pass by value vs reference
 
     // incrementally build out a solution using exercises
+
+        //sample here only to show how could use the Author class. This would exist elsewhere in project likely.
+    private void someMethod() {
+        ArrayList<Book> myBooks = new ArrayList<>();
+        myBooks.add(new Book());
+        Author author = new Author("Kane, Melissa", myBooks);
+        Author author2 = new Author("Blomberg, Robert", new ArrayList<Book>());
+    }
 
 }
