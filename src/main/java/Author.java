@@ -1,17 +1,13 @@
 import java.util.ArrayList;
+import java.util.Date;
 
+//Books by a particular author
 public class Author {
     private String name;
     private ArrayList<Book> catalog;
 
     public Author(String name) {
-
-        //"this" is required when you reuse a name of something and there might be ambiguity.
-        // only needed when there's a chance Java compiler doesn't know which one you're using.
         this.name = name;
-
-        //one below doesn't require "this" because it has a unique name
-        //name = authorName;
     }
 
     public Author(String name, ArrayList<Book> catalog) {
@@ -31,16 +27,19 @@ public class Author {
         return catalog;
     }
 
-    //returns a COPY of author's catalog book list. Immutable
-//    public Book[] getCatalog() {
-//        return (Book[]) catalog.toArray();
-//    }
-
     public void addBook(Book book) {
         catalog.add(book);
     }
 
-    public void removeBook(String isbn) {
+    public void removeBook(long isbn) {
         catalog.remove(isbn);
     }
+
+    public Book findBookByTitle(String title)  { return new Book(); }
+
+    public ArrayList<Book> findBooksContainingWords(String searchTerms) { return new ArrayList<Book>(); }
+
+    public Book findBookByIsbn(long isbn) { return new Book();}
+
+    public Book findBookByDatePublished(Date publishDate) { return new Book(); }
 }

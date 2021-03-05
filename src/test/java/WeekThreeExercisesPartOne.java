@@ -31,6 +31,10 @@ public class WeekThreeExercisesPartOne {
         myBooks.add(new Book());
         Author author = new Author("Kane, Melissa", myBooks);
         Author author2 = new Author("Blomberg, Robert", new ArrayList<Book>());
+        Book book = new Book("Year of Living Dangerously", new ArrayList<Author>());
+        Book book2 = new Book("Walden", new ArrayList<Author>());
     }
+
+
 
 }
