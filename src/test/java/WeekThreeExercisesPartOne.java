@@ -1,4 +1,6 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class WeekThreeExercisesPartOne {
    // class visibility
@@ -29,10 +31,12 @@ public class WeekThreeExercisesPartOne {
     private void someMethod() {
         ArrayList<Book> myBooks = new ArrayList<>();
         myBooks.add(new Book());
-        Author author = new Author("Kane, Melissa", myBooks);
-        Author author2 = new Author("Blomberg, Robert", new ArrayList<Book>());
-        Book book = new Book("Year of Living Dangerously", new ArrayList<Author>());
-        Book book2 = new Book("Walden", new ArrayList<Author>());
+        Author kane_mk = new Author("Kane, Melissa", myBooks);
+        Author blomberg_rt = new Author("Blomberg, Robert", new ArrayList<Book>());
+        blomberg_rt.addBook(new Book ("Title", 123456, LocalDate.of(2020, 1, 8), blomberg_rt));
+        Book year_of_living_dangerously = new Book("Year of Living Dangerously", new ArrayList<Author>());
+        Book walden = new Book("Walden", new ArrayList<Author>());
+        kane_mk.addBook(year_of_living_dangerously);
     }
 
 

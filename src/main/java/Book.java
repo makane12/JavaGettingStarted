@@ -1,15 +1,16 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 
 public class Book {
     private String title;
     private long isbn;
-    private Date publishDate;
+    private LocalDate publishDate;
     private ArrayList<Author> authors;
 
 
     //pass in array list of authors
-    public Book(String title, long isbn, Date publishDate, ArrayList<Author> authors) {
+    public Book(String title, long isbn, LocalDate publishDate, ArrayList<Author> authors) {
         this.title = title;
         this.isbn = isbn;
         this.publishDate = publishDate;
@@ -17,7 +18,7 @@ public class Book {
     }
 
     //pass in one author
-    public Book(String title, long isbn, Date publishDate, Author author) {
+    public Book(String title, long isbn, LocalDate publishDate, Author author) {
         this.title = title;
         this.isbn = isbn;
         this.publishDate = publishDate;
@@ -28,7 +29,7 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public Book(Date publishDate) {
+    public Book(LocalDate publishDate) {
         this.publishDate = publishDate;
     }
 
